@@ -18,7 +18,13 @@
     </header>
     <main>
       <section class="container mx-auto">
-        <h3 class="py-2">Choose Your Meals</h3>
+        <div class="d-flex justify-content-between">
+          <h3 class="py-2">Choose Your Meals</h3>
+          <div class="">
+            <input id="meals-field" type="text" placeholder="Search Your Food">
+            <button onclick="searchFood()" class="btn btn-primary">Search</button>
+          </div>
+        </div>
         <div
           id="meals-container"
           class="row row-cols-1 row-cols-md-3 mb-5 g-4"
