@@ -13,31 +13,48 @@
     />
   </head>
   <body>
+    <!-- Header section -->
     <header>
       <h1 class="text-center my-3 text-warning">Pick Your Meals</h1>
     </header>
+    <!-- Main section -->
     <main>
       <section class="container mx-auto">
+        <!-- Search section -->
         <div class="d-flex justify-content-between">
           <h3 class="py-2">Choose Your Meals</h3>
-          <div class="">
-            <input id="meals-field" type="text" placeholder="Search Your Food">
-            <button onclick="searchFood()" class="btn btn-primary">Search</button>
+          <div>
+            <input
+              id="meals-field"
+              type="text"
+              placeholder="Search Your Food"
+            />
+            <button onclick="searchFood()" class="btn btn-primary">
+              Search
+            </button>
           </div>
         </div>
+        <!-- Selected meal section -->
+        <div
+          id="selected-meal"
+          class="card mb-3"
+          style="max-width: 540px"
+        ></div>
+        <!-- Meal iteams section -->
         <div
           id="meals-container"
-          class="row row-cols-1 row-cols-md-3 mb-5 g-4"
+          class="row row-cols-1 row-cols-md-5 mb-5 g-4"
         ></div>
       </section>
     </main>
+    <!-- Footer section -->
     <footer class="bg-black py-2">
       <hr class="text-white-50 mx-5" />
       <p class="text-center text-white">
         Copyright @ 2023 All Rights Reserved.
       </p>
     </footer>
-    
+    <!-- JavaScript links -->
     <script src="js/meals.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
